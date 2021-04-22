@@ -88,9 +88,10 @@ n_sum = sum(!is.na(match(bag_of_words, negwords)))
 #get sentiment score
 sentiment_score <- p_sum - n_sum
 
-wordcloud(bag_of_words)
-wordcloud(bag_of_words, min.freq=2)
-wordcloud(bag_of_words, min.freq=2, random.order=FALSE)
+#wordcloud(bag_of_words)
+#wordcloud(bag_of_words, min.freq=2)
+#wordcloud(bag_of_words, min.freq=2, random.order=FALSE)
+x11()
 wordcloud(bag_of_words, min.freq=2, random.order=FALSE, color=rainbow(7), scale=c(3, 0.2))
 
 #doing the same for a corpus
